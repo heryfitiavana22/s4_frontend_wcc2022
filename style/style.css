@@ -1,7 +1,23 @@
-@font-face {
-    font-family: 'Neue Plak Light';
-    src: url('../assets/font/Neue\ Plak\ Light.ttf');
+.loading > .circle-animation.c1 {
+    animation-name: animation-circle1;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.1s;
+    animation-direction: alternate;
 }
+.circle-animation.c2 {
+    width: 15px;
+    height: 15px;
+    background-color: #e81974;
+}
+.loading > .circle-animation.c2 {
+    animation-name: animation-circle2;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+}
+
 body {
     position: fixed;
     left: 0;
@@ -12,7 +28,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: #f8f8f8;
-    /* font-family: 'Neue Plak Light'; */
     font-family: sans-serif;
     overflow-x: hidden;
 }
@@ -499,25 +514,6 @@ body > .circle-medium {
     height: 10px;
     background-color: #d1b46e;
     margin-right: 3px;
-}
-.loading > .circle-animation.c1 {
-    animation-name: animation-circle1;
-    animation-duration: 0.3s;
-    animation-iteration-count: infinite;
-    animation-delay: 0.1s;
-    animation-direction: alternate;
-}
-.circle-animation.c2 {
-    width: 15px;
-    height: 15px;
-    background-color: #e81974;
-}
-.loading > .circle-animation.c2 {
-    animation-name: animation-circle2;
-    animation-duration: 0.3s;
-    animation-iteration-count: infinite;
-    animation-delay: 0.2s;
-    animation-direction: alternate;
 }
 
 @keyframes animation-circle1 {
