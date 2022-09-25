@@ -12,6 +12,16 @@
     <div class="container-element">
         <span class="circle-top-right circle-large"></span>
         <span class="circle-bottom-left circle-large"></span>
+        <div class="more-line ml3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
             <div class="logo">
                 <span class="circle-extra-small c1"></span>
@@ -44,7 +54,8 @@
         </nav>
         <div class="left">
             <div class="img-section-left">
-                <span></span>
+                <span class="img-container"></span>
+                <span class="circle-extra-small c5"></span>
             </div>
             <p class="text-large">Reinventing the way you connect</p>
             <p class="text-small" style="margin-top:10px">Lorem ipsum dolor sit amet consectetur</p>
@@ -78,7 +89,18 @@
                         <span class="fas fa-phone"></span>
                     </div>
                 </div>
+
                 <div class="img-floating bottom-left">
+                    <div class="more-line ml2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="profil">
                         <img src="assets/img/person3.jpg" alt="profil">
                         <span class="line-profil"></span>
@@ -91,6 +113,7 @@
                         <span class="fas fa-comment-alt" id="comment"></span>
                     </footer>
                 </div>
+
                 <div class="img-floating top-right">
                     <div class="profil">
                         <img src="assets/img/person1.jpg" alt="profil">
@@ -106,12 +129,58 @@
                         <span class="footer-caption">Transfering files...</span>
                     </footer>
                 </div>
-                <div class="chat-container">
-                    
+
+                <span class="circle-extra-small c6"></span>
+                <span class="circle-extra-small c7"></span>
+                <div class="chat-container stats">
+                    <div class="your chat">
+                        <p>I need chat report now :) </p>
+                    </div>
+                    <div class="mine chat">
+                        <p>Coming your way</p>
+                        <img src="assets/img/person5.jpg" alt="mine image" class="mine-img">
+                    </div>
+
+                    <div class="statistics">
+                        <svg height="100%" width="100%">
+                            <text x="5" y="15" >50</text>
+                            <text x="5" y="27">40</text>
+                            <text x="5" y="39">30</text>
+                            <text x="5" y="51">20</text>
+                            <text x="5" y="63">10</text>
+                            <line x1="20" y1="12" x2="100%" y2="12" style="stroke:rgb(243, 179, 239);stroke-width:1; stroke-opacity: 0.5;" />
+                            <line x1="20" y1="23" x2="100%" y2="23" style="stroke:rgb(243, 179, 239);stroke-width:1; stroke-opacity: 0.5;" />
+                            <line x1="20" y1="35" x2="100%" y2="35" style="stroke:rgb(243, 179, 239);stroke-width:1; stroke-opacity: 0.5;" />
+                            <line x1="20" y1="47" x2="100%" y2="47" style="stroke:rgb(243, 179, 239);stroke-width:1; stroke-opacity: 0.5;" />
+                            <line x1="20" y1="59" x2="100%" y2="59" style="stroke:rgb(243, 179, 239);stroke-width:1; stroke-opacity: 0.5;" />
+                            <rect x="25" y="24" width="10" height="40" style="fill:white" />
+                            <rect x="40" y="19" width="10" height="45" style="fill:white" />
+                            <rect x="55" y="44" width="10" height="20" style="fill:white" />
+                            <rect x="70" y="14" width="10" height="50" style="fill:white" />
+                            <rect x="85" y="19" width="10" height="45" style="fill:white" />
+                            <rect x="24" y="70" width="25" height="5" style="fill:rgb(240, 109, 194)" />
+                            <rect x="24" y="76" width="12" height="5" style="fill:rgb(240, 109, 194)" />
+                            <rect x="70" y="70" width="25" height="5" style="fill:rgb(240, 109, 194)" />
+                            <rect x="70" y="76" width="12" height="5" style="fill:rgb(240, 109, 194)" />
+                        </svg>
+                    </div>
                 </div>
             </div>
             <span class="img-left-principal"></span>
             <span class="circle-extra-small c3"><span class="cirle-in c3"></span></span>
+        </div>
+
+        <div class="curve">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg viewBox="-11.179 15.045 654.684 479.033" width="654.684px" height="479.033px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+              <path style="fill: rgb(216, 216, 216); fill-opacity: 0; stroke: rgb(232, 231, 231);" d="M -11.179 25.285 L -5.821 23.337 C -0.463 21.388 10.254 17.492 24.77 15.836 C 39.286 14.179 57.601 14.764 75.43 21.096 C 93.258 27.429 110.6 39.509 124.142 50.129 C 137.683 60.748 147.426 69.905 152.52 88.757 C 157.614 107.609 158.059 136.154 171.508 150.45 C 184.956 164.746 211.407 164.793 233.165 164.573 C 254.924 164.352 271.989 163.866 294.71 156.498 C 317.43 149.13 345.804 134.881 369.828 125.946 C 393.851 117.011 413.522 113.39 428.513 114.141 C 443.504 114.892 453.815 120.014 461.429 125.833 C 469.044 131.651 473.964 138.164 477.674 148.351 C 481.384 158.537 483.884 172.396 482.127 184.813 C 480.369 197.231 474.353 208.207 460.308 221.943 C 446.262 235.68 424.188 252.176 405.771 279.609 C 387.354 307.042 372.596 345.41 378.437 384.306 C 384.279 423.202 410.721 462.626 458.332 480.389 C 505.944 498.153 574.724 494.256 609.115 492.308 L 643.505 490.36" bx:d="M -11.179 25.285 U 20.97 13.595 U 75.917 15.348 U 127.941 51.59 U 157.168 79.063 U 158.505 164.7 U 237.858 164.839 U 289.055 163.379 U 374.179 120.632 U 433.194 109.769 U 464.125 125.137 U 478.883 144.678 U 486.385 186.255 U 468.337 219.183 U 402.113 268.673 U 357.837 383.779 U 437.163 502.049 U 643.505 490.36 1@514f2e5a"/>
+              <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(209, 180, 110); stroke-opacity: 0;" cx="74.429" cy="20.914" rx="2.24" ry="2.521"/>
+            </svg>
+            <svg viewBox="-11.179 19.36 651.74 472.068" width="651.74" height="472.068" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+            <path style="fill: rgb(216, 216, 216); fill-opacity: 0; stroke: rgb(232, 231, 231);" d="M -11.179 491.112 L 3.501 491.227 C 18.18 491.342 47.54 491.572 77.264 491.302 C 106.989 491.032 137.079 490.261 167.295 490.207 C 197.511 490.152 227.854 490.814 256.236 489.575 C 284.619 488.336 311.041 485.196 338.826 480.935 C 366.61 476.673 395.756 471.288 418.035 463.522 C 440.314 455.756 455.727 445.608 469.636 430.505 C 483.544 415.402 495.95 395.343 499.782 373.701 C 503.614 352.059 498.872 328.834 493.95 310.782 C 489.027 292.731 483.924 279.853 479.904 267.046 C 475.884 254.238 472.949 241.5 474.676 228.934 C 476.404 216.369 482.795 203.975 490.92 197.754 C 499.045 191.533 508.905 191.484 518.308 192.207 C 527.711 192.93 536.658 194.426 546.53 196.314 C 556.402 198.202 567.198 200.482 578.096 202.763 C 588.993 205.043 599.991 207.323 608.04 209.084 C 616.089 210.844 621.19 212.084 626.118 213.211 C 631.047 214.339 635.804 215.354 638.183 215.861 L 640.561 216.369" bx:d="M -11.179 491.112 U 76.899 491.802 U 167.169 489.491 U 258.196 491.475 U 337.464 482.057 U 424.902 465.904 U 471.139 435.46 U 508.355 375.285 U 494.131 305.608 U 478.82 266.976 U 470.013 228.762 U 489.186 191.582 U 518.764 191.435 U 545.605 195.921 U 577.995 202.763 U 610.989 209.604 U 626.29 213.324 U 640.561 216.369 1@e84a0574"/>
+            <path style="fill: rgb(216, 216, 216); fill-opacity: 0; stroke: rgb(232, 231, 231);" d="M 388.82 19.36 L 381.338 31.993 C 373.857 44.626 358.893 69.892 366.252 92.46 C 373.611 115.027 403.293 134.897 452.598 136.736 C 501.904 138.576 570.833 122.386 605.298 114.291 L 639.763 106.196" bx:d="M 388.82 19.36 U 343.93 95.158 U 432.974 154.766 U 639.763 106.196 1@1ceb907e"/>
+            <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(232, 25, 116); stroke-opacity: 0; stroke-width: 0px;" cx="626.324" cy="110.551" rx="5.328" ry="5.328"/>
+            </svg>
         </div>
     </div>
     <span class="circle-left circle-medium"></span>
