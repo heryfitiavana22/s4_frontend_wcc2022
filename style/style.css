@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
 }
-button:focus-visible {outline: none !important;}
+button:focus-visible, li:focus-visible {outline: none !important;}
 
 .container-element {
     position: relative;
@@ -57,7 +57,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 5;
 }
 .logo {display: flex; align-items: center;}
 .circle-extra-small {
@@ -502,17 +502,19 @@ body > .circle-medium {
         justify-content: center;
         width: 100%;
     }
+    .right {width: 100%;}
     .left > * {width: 73%;}
     .img-section-left {margin-top: 65px;}
     .curve {display: none;}
 }
 
 @media screen and (max-width : 768px) {
-    .nav-list {
+    .nav-list {display: none;}
+    .nav-list-resp {
         position: fixed;
         top: 0;
         left: 100%;
-        display: block;
+        display: block !important;
         width: 100%;
         height: 100%;
         flex-wrap: wrap;
@@ -523,18 +525,18 @@ body > .circle-medium {
         font-weight: bold;
         transition: all 0.5s ease;
     }
-    .nav-list > li {
+    .nav-list-resp > li {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
         margin-bottom: 20px;
     }
-    .nav-list > li:hover {
+    .nav-list-resp > li:hover {
         border: 2px solid transparent !important;
         padding: 10px !important;
     }
-    .nav-list > li > span {position: relative;}
+    .nav-list-resp > li > span {position: relative;}
     .line-text {
         display: block;
         width: 0;
@@ -542,7 +544,7 @@ body > .circle-medium {
         background-color: #fca53c;
         transition: all 0.5s ease;
     }
-    .nav-list > li > span:hover > .line-text {width: 100%;}
+    .nav-list-resp > li > span:hover > .line-text {width: 100%;}
     #toggle-icon {
         position: relative;
         right: 74px;
@@ -575,9 +577,26 @@ body > .circle-medium {
 }
 
 @media screen and (max-width : 576px) {
-    .container-element {padding: 20px;}
+    .container-element {padding: 20px; padding-bottom: 500px;}
     .left > * {width: 100%;}
     nav {padding: 0 27px;}
     #toggle-icon {right: 58px;}
     .text-large {font-size: 30px; }
+
+    .bottom-left {    
+        top: 351px;
+        left: -16px;
+    }
+    .top-right {
+        top: 351px;
+        right: -23px;
+    }
+    .chat-container {
+        position: absolute;
+        font-size: 11px;
+        right: 99px;
+        top: 526px;
+    }
+    .your {width: 120px;}
+    .statistics {left: 0;}
 }
