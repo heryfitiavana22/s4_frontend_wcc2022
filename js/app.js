@@ -1,5 +1,22 @@
 let animation = document.querySelector('.animation');
-console.log(animation.childNodes);
+window.addEventListener('load', ()=>{
+    // animation.classList.add('loading');
+    console.log('load');
+})
+window.onload = function() {
+    console.log('onload');
+    setTimeout(()=> {
+        animation.classList.remove('loading');
+        animation.childNodes[1].style.transform = 'scale(0)'
+        animation.childNodes[3].style.transform = 'scale(0)'
+    },4000)
+    setTimeout(()=> {
+        animation.style.display = 'none'
+    },4350)
+
+    if(currentWidth <= 768) {listNav.classList.add('nav-list-resp')}
+    hideNav()
+}
 
 let listNav = document.querySelector('.nav-list'),
     currentWidth =  0;
@@ -19,24 +36,6 @@ function hideNav() {
     }
 }
 
-window.addEventListener('load', ()=>{
-    animation.classList.add('loading');
-    console.log('load');
-})
-window.onload = function() {
-    console.log('onload');
-    setTimeout(()=> {
-        animation.classList.remove('loading');
-        animation.childNodes[1].style.transform = 'scale(0)'
-        animation.childNodes[3].style.transform = 'scale(0)'
-    },4000)
-    setTimeout(()=> {
-        animation.style.display = 'none'
-    },4350)
-
-    if(currentWidth <= 768) {listNav.classList.add('nav-list-resp')}
-    hideNav()
-}
     
 
 
